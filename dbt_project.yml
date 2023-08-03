@@ -16,7 +16,11 @@ models:
       +materialized: ephemeral
     intermediate:
       +materialized: ephemeral
+    final:
+      +tags: final
 vars:
+  quickbooks_database: DB_NAME_HERE
+  quickbooks_schema: SCHEMA_NAME_HERE
   quickbooks:
     account: "{{ ref('stg_quickbooks__account') }}"
     address: "{{ ref('stg_quickbooks__address') }}"
