@@ -16,7 +16,11 @@ models:
       +materialized: ephemeral
     intermediate:
       +materialized: ephemeral
+    final:
+      +tags: final
 vars:
+  quickbooks_database: FIVETRAN_PROD
+  quickbooks_schema: PROD_112062_152548
   quickbooks:
     account: "{{ ref('stg_quickbooks__account') }}"
     address: "{{ ref('stg_quickbooks__address') }}"
