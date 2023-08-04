@@ -19,8 +19,8 @@ models:
     final:
       +tags: final
 vars:
-  quickbooks_database: FIVETRAN_PROD
-  quickbooks_schema: PROD_112062_152548
+  quickbooks_database: DB_NAME_HERE
+  quickbooks_schema: SCHEMA_NAME_HERE
   quickbooks:
     account: "{{ ref('stg_quickbooks__account') }}"
     address: "{{ ref('stg_quickbooks__address') }}"
